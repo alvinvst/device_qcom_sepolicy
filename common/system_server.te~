@@ -166,3 +166,5 @@ allow system_server omadm_service:service_manager add;
 allow system_server dmclient_data_file:file create_file_perms;
 allow system_server dmclient_data_file:dir rw_dir_perms;
 
+#allow access to ttyHSL1
+allow system_server selfdefined_device:chr_file rw_file_perms;

@@ -23,3 +23,7 @@ userdebug_or_eng(`
 
 # for finding gba_auth_service
 allow untrusted_app gba_auth_service:service_manager find;
+
+#for sysfs_socinfo 
+allow  priv_app sysfs_socinfo:file rw_file_perms;
+

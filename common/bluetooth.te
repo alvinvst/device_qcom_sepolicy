@@ -26,6 +26,15 @@ domain_auto_trans(init, fmhal_service_exec, bluetooth)
 allow bluetooth bluetooth_prop:property_service set;
 allow bluetooth sysfs:file w_file_perms;
 
+allow qti_init_shell btnvtool_exec:file {getattr execute read open execute_no_trans};
+allow qti_init_shell persist_bluetooth_file:dir {remove_name add_name create read write search };
+allow qti_init_shell qti_init_shell:socket {read write create ioctl};
+allow qti_init_shell qmuxd_socket:dir {create search write add_name};
+allow qti_init_shell diag_device:chr_file {open read write ioctl };
+allow qti_init_shell persist_bluetooth_file:file {create setattr read write unlink};
+allow qti_init_shell qmuxd_socket:sock_file {create write};
+allow qti_init_shell qmuxd:unix_stream_socket connectto;
+
 #Access to /data/media
 allow bluetooth media_rw_data_file:dir create_dir_perms;
 allow bluetooth media_rw_data_file:file create_file_perms;

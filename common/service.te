@@ -1,5 +1,7 @@
+type quec_service,                service_manager_type;
 type iqfp_service,                service_manager_type;
 type atfwd_service,               service_manager_type;
+type atfwd_quec_service,          service_manager_type;
 type per_mgr_service,             service_manager_type;
 type dpmservice,                  service_manager_type;
 type cne_service,                 service_manager_type;
@@ -24,3 +26,4 @@ type uce_service,                 service_manager_type;
 type wigigp2p_service,            app_api_service, system_server_service, service_manager_type;
 type wigig_service,               app_api_service, system_server_service, service_manager_type;
 type esepmdaemon_service,         service_manager_type;
+type omadm_service, 		  system_server_service, service_manager_type;

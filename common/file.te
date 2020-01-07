@@ -10,6 +10,8 @@ type netmgrd_socket, file_type;
 #Define the pps socket type
 type pps_socket, file_type;
 
+type dmclient_data_file, file_type, data_file_type;
+
 # Define cnd socket and data file type
 type cnd_socket, file_type, mlstrustedobject;
 type cnd_data_file, file_type;
@@ -111,7 +113,7 @@ type sysfs_hsic, sysfs_type, fs_type;
 type sysfs_hsic_host_rdy, sysfs_type, file_type;
 
 # Files accessed by qcom-system-daemon
-type sysfs_socinfo, fs_type, sysfs_type;
+type sysfs_socinfo, fs_type, sysfs_type, mlstrustedobject;
 
 #Define the sysfs files for usb_uicc_daemon
 type sysfs_usb_uicc, sysfs_type, fs_type;

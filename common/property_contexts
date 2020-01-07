@@ -77,6 +77,9 @@ persist.net.doxlat         u:object_r:xlat_prop:s0
 dolby.                     u:object_r:dolby_prop:s0
 # DOLBY_END
 wifi.ftmd.                 u:object_r:wififtmd_prop:s0
+wifi.ptt_socket_app				 u:object_r:wififtmd_prop:s0
+wifi.p_socket_app					 u:object_r:wififtmd_prop:s0
+bt.start        u:object_r:quec_prop:s0
 ro.bluetooth.              u:object_r:bluetooth_prop:s0
 # WIGIG
 persist.fst.               u:object_r:fst_prop:s0
